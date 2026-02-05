@@ -44,9 +44,9 @@ const ServicesAI: React.FC = () => {
                 </div>
                 <div className="mt-6 p-4 bg-moon-950/80 rounded-sm border border-arctic-500/30">
                   <p className="text-sm text-arctic-200 font-mono">
-                    > Analys klar.<br/>
-                    > 12% avvikelse identifierad i leverantörskategori B.<br/>
-                    > Åtgärd: Omfförhandling rekommenderas.
+                    {'>'} Analys klar.<br/>
+                    {'>'} 12% avvikelse identifierad i leverantörskategori B.<br/>
+                    {'>'} Åtgärd: Omförhandling rekommenderas.
                   </p>
                 </div>
              </div>
