@@ -8,8 +8,8 @@ const About: React.FC = () => {
       {/* Header */}
       <section className="bg-moon-900 text-white pt-24 pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Om Arctic Moon</h1>
-          <p className="text-xl text-moon-300 leading-relaxed max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">Om Arctic Moon</h1>
+          <p className="text-xl text-moon-300 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-100">
             Vi är inte en traditionell konsultfirma. Vi är din operativa partner för inköp och verksamhetsstyrning.
           </p>
         </div>
@@ -17,7 +17,7 @@ const About: React.FC = () => {
 
       {/* Main Content: The Name Concept */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
-        <div className="bg-white p-10 md:p-16 rounded-sm shadow-xl border border-moon-100">
+        <div className="bg-white p-10 md:p-16 rounded-sm shadow-xl border border-moon-100 animate-scale-in">
           <h2 className="text-3xl font-bold text-moon-900 mb-12 text-center">Namnet är vårt arbetssätt</h2>
           
           <div className="grid md:grid-cols-2 gap-16">

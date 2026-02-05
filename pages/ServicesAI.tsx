@@ -10,20 +10,22 @@ const ServicesAI: React.FC = () => {
       <section className="bg-gradient-to-br from-moon-900 to-moon-800 text-white py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="flex items-center gap-2 text-arctic-400 font-semibold tracking-wider uppercase text-sm mb-4">
+            <div className="flex items-center gap-2 text-arctic-400 font-semibold tracking-wider uppercase text-sm mb-4 animate-fade-in-down">
               <Cpu size={16} />
               <span>Praktisk Tillämpning</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fade-in-up animation-delay-100">
               AI & Analys:<br/>
               <span className="text-arctic-500">Verktyg, inte magi.</span>
             </h1>
-            <p className="text-lg text-moon-300 mb-8 max-w-lg">
+            <p className="text-lg text-moon-300 mb-8 max-w-lg animate-fade-in-up animation-delay-200">
               Vi använder AI för att räkna snabbare, hitta mönster i era kostnader och prognostisera bättre. Inga flygande bilar, bara bättre beslutsunderlag.
             </p>
-            <Button className="bg-white text-moon-900 hover:bg-moon-100">
-              Analysera er data
-            </Button>
+            <div className="animate-fade-in-up animation-delay-300">
+              <Button className="bg-white text-moon-900 hover:bg-moon-100">
+                Analysera er data
+              </Button>
+            </div>
           </div>
           <div className="relative">
              {/* Abstract representation of structured data */}
@@ -63,7 +65,7 @@ const ServicesAI: React.FC = () => {
       {/* Features */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow hover-lift animate-fade-in-up animation-delay-100">
             <Search className="w-10 h-10 text-arctic-600 mb-6" />
             <h3 className="text-xl font-bold text-moon-900 mb-3">Spendanalys ("Vart tar pengarna vägen?")</h3>
             <p className="text-moon-600 text-sm leading-relaxed">
@@ -71,7 +73,7 @@ const ServicesAI: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow hover-lift animate-fade-in-up animation-delay-200">
             <BarChart3 className="w-10 h-10 text-arctic-600 mb-6" />
             <h3 className="text-xl font-bold text-moon-900 mb-3">Scenario-simulering</h3>
             <p className="text-moon-600 text-sm leading-relaxed">
@@ -79,7 +81,7 @@ const ServicesAI: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow">
+          <div className="bg-white p-8 border-t-4 border-arctic-500 shadow-sm hover:shadow-md transition-shadow hover-lift animate-fade-in-up animation-delay-300">
             <Database className="w-10 h-10 text-arctic-600 mb-6" />
             <h3 className="text-xl font-bold text-moon-900 mb-3">Avtalsgranskning</h3>
             <p className="text-moon-600 text-sm leading-relaxed">

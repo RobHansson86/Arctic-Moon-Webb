@@ -11,22 +11,22 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative bg-moon-50 pt-20 pb-32 px-4 sm:px-6 lg:px-8 border-b border-moon-200">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-arctic-100 text-arctic-800 text-xs font-bold tracking-wider uppercase mb-6">
+          <span className="inline-block py-1 px-3 rounded-full bg-arctic-100 text-arctic-800 text-xs font-bold tracking-wider uppercase mb-6 animate-fade-in-down">
             Strategisk Inköpsstyrning
           </span>
-          <h1 className="text-5xl md:text-6xl font-bold text-moon-900 mb-8 tracking-tight leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-moon-900 mb-8 tracking-tight leading-tight animate-fade-in-up animation-delay-100">
             Sluta gissa.<br/>
             <span className="text-arctic-600">Ta kontroll över marginalerna.</span>
           </h1>
-          <p className="text-xl text-moon-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-moon-600 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
             Vi hjälper företagsledningar i ägarledda bolag att professionalisera inköp och kostnadskontroll. Från kaos till klarhet.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-300">
             <Link to={PageRoute.AI_ANALYSIS}>
-              <Button size="lg">Upptäck AI & Analys</Button>
+              <Button size="lg" className="smooth-transition">Upptäck AI & Analys</Button>
             </Link>
             <Link to={PageRoute.ABOUT}>
-              <Button variant="outline" size="lg">Om Arctic Moon</Button>
+              <Button variant="outline" size="lg" className="smooth-transition">Om Arctic Moon</Button>
             </Link>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             </p>
             
             <div className="space-y-8">
-              <div className="flex gap-4">
+              <div className="flex gap-4 animate-fade-in-up animation-delay-100 smooth-transition hover-lift p-4 rounded-sm">
                 <div className="flex-shrink-0 w-12 h-12 bg-red-50 rounded-sm flex items-center justify-center text-red-600">
                   <TrendingDown size={24} />
                 </div>
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 animate-fade-in-up animation-delay-200 smooth-transition hover-lift p-4 rounded-sm">
                 <div className="flex-shrink-0 w-12 h-12 bg-orange-50 rounded-sm flex items-center justify-center text-orange-600">
                   <EyeOff size={24} />
                 </div>
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4 animate-fade-in-up animation-delay-300 smooth-transition hover-lift p-4 rounded-sm">
                 <div className="flex-shrink-0 w-12 h-12 bg-yellow-50 rounded-sm flex items-center justify-center text-yellow-600">
                   <AlertTriangle size={24} />
                 </div>
@@ -121,8 +121,8 @@ const Home: React.FC = () => {
               { title: "Ingen 'Consultant-speak'", desc: "Vi pratar klarspråk. Marginal, risk, leverans. Inga floskler.", icon: AlertTriangle },
               { title: "Resultatfokus", desc: "Vi mäter framgång i kronor och ören på sista raden, inte i antalet powerpoints.", icon: TrendingDown },
             ].map((item, i) => (
-              <div key={i} className="bg-white p-8 rounded-sm shadow-sm border border-arctic-100">
-                <div className="w-12 h-12 bg-arctic-100 text-arctic-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div key={i} className={`bg-white p-8 rounded-sm shadow-sm border border-arctic-100 hover-lift smooth-transition animate-fade-in-up animation-delay-${(i + 1) * 100}`}>
+                <div className="w-12 h-12 bg-arctic-100 text-arctic-700 rounded-full flex items-center justify-center mx-auto mb-6 smooth-transition hover:bg-arctic-200">
                   <item.icon size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-moon-900 mb-3">{item.title}</h3>

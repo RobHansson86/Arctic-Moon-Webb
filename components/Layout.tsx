@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { PageRoute } from '../types';
 import { Button } from './Button';
+import { ContactForm } from './ContactForm';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -123,22 +124,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               </div>
             </div>
             
-            <div className="bg-moon-800 p-8 rounded-sm border border-moon-700">
-              <h3 className="text-xl font-semibold text-white mb-4">Boka ett introduktionsmöte</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <label className="block text-sm font-medium mb-1">E-post</label>
-                  <input type="email" placeholder="namn@foretag.se" className="w-full bg-moon-900 border-moon-600 rounded-sm p-3 text-white focus:border-arctic-500 focus:ring-1 focus:ring-arctic-500 outline-none" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-1">Telefon</label>
-                  <input type="tel" placeholder="070-123 45 67" className="w-full bg-moon-900 border-moon-600 rounded-sm p-3 text-white focus:border-arctic-500 focus:ring-1 focus:ring-arctic-500 outline-none" />
-                </div>
-                <Button fullWidth className="mt-2">
-                  Skicka förfrågan <ArrowRight size={16} className="ml-2" />
-                </Button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
           <div className="border-t border-moon-800 mt-16 pt-8 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} Arctic Moon AB. Alla rättigheter förbehållna.
